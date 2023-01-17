@@ -1,0 +1,19 @@
+<!-- Страница графика -->
+
+{% extends 'interface/base.html' %}
+  {% block content %}
+    <span class="fs-4 fw-bold">Мониторинг</span>
+        <hr>
+ <div id="chart">
+ </div>
+  {% endblock %}
+
+   {% block scripts %}
+   {% load static %}
+     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+     <script src="{% static 'js/monitor.js' %}"></script>
+
+    {% endblock %}
+
+
